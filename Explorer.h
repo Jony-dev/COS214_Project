@@ -2,10 +2,11 @@
 #define EXPLORER_H
 
 #include<string>
+#include "Ship.h"
 
 using namespace std;
 
-class Explorer
+class Explorer : public Ship
 {
 	public:
 		Explorer();

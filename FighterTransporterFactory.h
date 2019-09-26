@@ -2,17 +2,21 @@
 #define FIGHTERTRANSPORTERFACTORY_H
 
 #include<string>
+#include "ShipFactory.h"
 
 using namespace std;
 
-class FighterTransporterFactory
+class FighterTransporterFactory : public ShipFactory
 {
-	public:
-		FighterTransporterFactory();
-		~FighterTransporterFactory();
+public:
+    FighterTransporterFactory();
+    ~FighterTransporterFactory();
 
-	private:
-	
+    Ship* buildShip();
+
+private:
+    Ship* createShip();
+
 };
 
 #endif
