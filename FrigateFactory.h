@@ -2,17 +2,21 @@
 #define FRIGATEFACTORY_H
 
 #include<string>
+#include "ShipFactory.h"
 
 using namespace std;
 
-class FrigateFactory
+class FrigateFactory : public ShipFactory
 {
-	public:
-		FrigateFactory();
-		~FrigateFactory();
+public:
+    FrigateFactory();
+    ~FrigateFactory();
 
-	private:
-	
+    Ship* buildShip();
+
+private:
+    Ship* createShip();
+
 };
 
 #endif

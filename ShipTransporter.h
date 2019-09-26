@@ -2,10 +2,11 @@
 #define SHIPTRANSPORTER_H
 
 #include<string>
+#include "Ship.h"
 
 using namespace std;
 
-class ShipTransporter
+class ShipTransporter : public Ship
 {
 	public:
 		ShipTransporter();

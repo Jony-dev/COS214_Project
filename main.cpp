@@ -32,6 +32,8 @@ using namespace std;
 
 int main()
 {
-	
+    ShipFactory* shipFactory = new BattleshipFactory();
+    Ship* myShip = shipFactory->buildShip();
+
 	return 0;
 }

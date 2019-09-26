@@ -2,17 +2,21 @@
 #define BATTLESHIPFACTORY_H
 
 #include<string>
+#include "ShipFactory.h"
 
 using namespace std;
 
-class BattleshipFactory
+class BattleshipFactory : public ShipFactory
 {
-	public:
-		BattleshipFactory();
-		~BattleshipFactory();
+public:
+    BattleshipFactory();
+    ~BattleshipFactory();
 
-	private:
-	
+    Ship* buildShip();
+
+private:
+    Ship* createShip();
+
 };
 
 #endif
